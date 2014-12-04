@@ -1,0 +1,60 @@
+	############################
+	#   Se debrouiller avec    #
+	#	  GIT	           #
+	############################
+
+
+	How-to Install
+	###########################
+
+apt-get install git-core gitk
+
+	How to configure :
+	###########################
+
+Tout se fait dans le fichier .gitconfig qui est placé dans /root
+ou alors en console via les commandes git config --global
+
+Voici un extrait de départ :
+
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+[user]
+        name = dgusmano
+        email = dgusmano@gmail.com
+
+[alias]
+        ci = commit
+        co = checkout
+        st = status
+        br = branch
+
+En console on peut taper :
+git config --global user.name "votre_pseudo"....
+
+Biensûr se referrer au wiki pour le détail des commandes :
+
+	Création d'un nouveau projet:
+	#############################
+
+Pour créer un nouveau projet vous devez egalement posséder un compte actif sur github : https://github.com/
+Pensez à valider votre mail sur le site.
+
+Sur votre machine cliente commencez par créer un dossier dans votre home qui hebergera votre projet.
+
+cd /home/user
+mkdir 'Votre_Depot'
+
+Vous avez besoin maintenant d'initialiser ce projet :
+git init  # dans le dossier du projet evidement.
+
+Si on liste nos fichiers on se rend compte que desormais un fichier .git s'est créer dans le dossier où nous nous trouvons.
+
+	Clone d'un projet existant :
+	#############################
+
+faire un git clone de http://github.com/'votre projet
+
+
